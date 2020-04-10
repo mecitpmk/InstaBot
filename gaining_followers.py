@@ -50,8 +50,6 @@ class InstagramBot:
         
 
     def get_hashtag(self,hashtag_name):
-        # self.photos_list=[]
-        self.mecit_list=[]
         self.driver.get(f'https://www.instagram.com/explore/tags/{hashtag_name}/')
         time.sleep(1)
         for a in range(900):
@@ -82,14 +80,3 @@ which_hashtag=str(input("Hashtag ( Başına # KOYMAYINIZ ! ):"))
 mecit=InstagramBot(enter_id,enter_pass)
 mecit.login()
 mecit.get_hashtag(which_hashtag)
-
-# mecit=InstagramBot('mecxprivate','sananelan31')
-# mecit.login()
-# mecit.get_hashtag('istanbul')
-
-
-
-
-
-
-

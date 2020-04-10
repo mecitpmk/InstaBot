@@ -106,7 +106,7 @@ class InstagramBot:
             print(f' Total number who doesnt follow you is = {len(self.non_followers_dict)}')
             print("************************************")
             self.input1=input("Do You Want To Unfollow User? [write [y] or [Y]]:")
-            if self.input1 == "y":
+            if self.input1 == "y" or self.input1 == "Y":
                 self.input2=input("Which user do you want to unfollow write down name.:")
                 if self.input2 in self.non_followers_dict:
                     self.driver.get(self.non_followers_dict[self.input2])

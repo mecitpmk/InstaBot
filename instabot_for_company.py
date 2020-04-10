@@ -62,7 +62,7 @@ class InstagramBot:
         time.sleep(0.3)
         open_followers=self.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/header/section/ul/li[3]/a").click()
         time.sleep(2)
-        for a in range(50):
+        for a in range(150):
             click_to_box=self.driver.find_element_by_xpath("/html/body/div[4]/div/div[2]").click()
             scrool_down=self.driver.find_element_by_tag_name('body').send_keys(Keys.PAGE_DOWN) # scrool_down script
             time.sleep(0.05)
